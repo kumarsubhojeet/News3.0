@@ -27,7 +27,7 @@ export default function Home() {
   const [data, setdata] = useState([]);
   const [img , setimg] = useState([]) ;
 
-  const Key = "0amjT1mFx6UYAAHwNaxEti1MF2asAWeN";
+  const Key = process.env.REACT_APP_KEY
 
   const NewsApi = async () => {
     try {
