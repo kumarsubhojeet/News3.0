@@ -1,0 +1,44 @@
+export const NewsCategorySearch = [
+    {
+        name:"arts"
+    },
+    {
+        name:"automobiles"
+    },
+    {
+        name:"books"
+    },
+    {
+        name:"Business"
+    },
+    {
+        name:"fashion"
+    },
+    {
+        name:"food"
+    },
+    {
+        name:"Health"
+    },
+    {
+        name:"movies"
+    },
+    {
+        name:"politics"
+    },
+    {
+        name:"technology"
+    },
+    {
+        name:"travel"
+    }, {
+        name:"us"
+    },
+    {
+        name:"realestate"
+    },
+    {
+        name:"upshot"
+    },
+
+]

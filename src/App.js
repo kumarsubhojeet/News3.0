@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./Compo/Home.jsx";
+import { Switch, Route } from "react-router-dom";
+import Navbar from "./Compo/Navbar.jsx";
+import NavCaterogy from "./Compo/NavCaterogy.jsx";
+import TopNav from "./Compo/TopNav.jsx";
+import SearchNews from "./Compo/SearchNews.jsx";
+import NewsCategorySearch from './Compo/NewsCategorySearch.jsx';
+import Footer from './Compo/Footer'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <TopNav />
+      <Navbar />
+      <NavCaterogy />
+      <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route exact path='/Search/:name' children={<SearchNews />}></Route>
+        <Route exact path='/News/:name' children={<NewsCategorySearch />}></Route>
+
+        
+      </Switch>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
