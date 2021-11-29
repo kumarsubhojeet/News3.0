@@ -20,7 +20,7 @@ height: 40,
 
 
   const [data, setdata] = useState([]);
-  const Key = "0amjT1mFx6UYAAHwNaxEti1MF2asAWeN";
+  const Key = process.env.REACT_APP_KEY
 
   const NewsApi = async () => {
     try {
